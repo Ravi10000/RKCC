@@ -21,18 +21,18 @@ const subtitle = document.querySelector('#subtitle');
 const text = "We Provide Complete Air Conditioner and Refrigrator Solutions.";
 
 
-let i = 0;
-// var txt = 'Lorem ipsum dummy text blabla.';
-let speed = 50;
-function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("subtitle").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
+// let i = 0;
+// // var txt = 'Lorem ipsum dummy text blabla.';
+// let speed = 50;
+// function typeWriter() {
+//     if (i < text.length) {
+//       document.getElementById("subtitle").innerHTML += text.charAt(i);
+//       i++;
+//       setTimeout(typeWriter, speed);
+//     }
+//   }
 
-  window.addEventListener('load', typeWriter)
+//   window.addEventListener('load', typeWriter)
 
 
 

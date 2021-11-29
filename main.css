@@ -50,6 +50,7 @@ body .container .header .header-left .title #brand-name {
   font-size: 5rem;
   line-height: 1;
   margin-bottom: 2rem;
+  color: #00403A;
 }
 body .container .header .header-left .title #brand-highlight {
   height: 0.2rem;
@@ -64,8 +65,9 @@ body .container .header .header-left .title #subtitle {
   width: 40vw;
   font-weight: 500;
   font-size: 1.5rem;
-  color: #3F3D56;
+  color: #000000;
   letter-spacing: 1.5px;
+  opacity: 50%;
 }
 body .container .header .header-left .contact-info {
   height: 12rem;
@@ -123,7 +125,7 @@ body .container .services-container .install {
   height: 160px;
   width: 50vw;
   margin-left: 10vw;
-  background-color: #2A4D69;
+  background-color: #5ab8e0b0;
   margin-top: 20px;
   border-radius: 150px 150px 150px 150px;
   display: flex;
@@ -137,7 +139,8 @@ body .container .services-container .install img {
 body .container .services-container .install p {
   margin-right: 25px;
   font-size: 1.2rem;
-  color: #fff;
+  font-weight: 500;
+  color: #09263b;
 }
 body .container .services-container .repair {
   position: absolute;
@@ -145,7 +148,7 @@ body .container .services-container .repair {
   height: 160px;
   width: 50vw;
   margin-right: 10vw;
-  background-color: #009688;
+  background-color: #00948580;
   margin-top: 20px;
   border-radius: 150px 150px 150px 150px;
   display: flex;
@@ -160,12 +163,13 @@ body .container .services-container .repair img {
 }
 body .container .services-container .repair p {
   font-size: 1.2rem;
-  color: #fff;
+  font-weight: 500;
+  color: #003631;
 }
 body .container .tfs {
   width: 90vw;
   height: 200px;
-  background-color: #4B86B4;
+  background-color: rgba(255, 117, 124, 0.5);
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
@@ -177,8 +181,9 @@ body .container .tfs img {
 }
 body .container .tfs p {
   width: 250px;
-  color: #fff;
+  color: #4F130E;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 body .container .certified {
   display: flex;
@@ -193,9 +198,14 @@ body .container .certified .left {
   align-items: center;
   justify-content: center;
   width: 30vw;
+  text-align: center;
 }
 body .container .certified .left img {
   width: 100px;
+}
+body .container .certified .left p {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 body .container .certified .right {
   display: flex;
@@ -204,7 +214,7 @@ body .container .certified .right {
   width: 30vw;
 }
 body .container .certified .right #jd {
-  transform: scale(0.4);
+  transform: scale(0.3);
   border-radius: 20px;
 }
 
@@ -265,10 +275,13 @@ body .container .certified .right #jd {
   body .container .services-container .repair {
     position: static;
   }
+  body .container .services-container .repair p {
+    margin-left: 20px;
+  }
   body .container .tfs {
     width: 100vw;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
   }
   body .container .tfs img {
     width: 100px;
@@ -279,18 +292,22 @@ body .container .certified .right #jd {
   }
   body .container .certified {
     overflow: hidden;
+    padding-bottom: 50px;
     width: 100vw;
     background-color: #b1ffdc98;
     flex-direction: column;
+    height: 800px;
+    border-radius: 10px;
   }
   body .container .certified .left {
     height: 200px;
-    text-align: center;
     width: 100vw;
     margin-bottom: 20px;
   }
   body .container .certified .left p {
     width: 50vw;
+    font-size: 1rem;
+    color: #00403A;
   }
   body .container .certified .right {
     height: 400px;
