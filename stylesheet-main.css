@@ -1,0 +1,192 @@
+:root{
+    font-size: 16px;
+}
+body{
+    background: #D9DCB8;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-family: Poppins;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vh;
+}
+.header-left{
+    max-height: 100vh;
+    max-width: 50vw;
+}
+
+#bg-hero{
+    transform: scale(.75);
+    position: absolute;
+    left: -40rem;
+    top: -45rem;
+    animation: animate-hero .75s ease-in-out;
+}
+#technician{
+    transform: scale(.5);
+    position: absolute;
+    right: -10rem;
+    top: -10rem;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+    height: 25vh;
+    /* opacity: 0; */
+    transform: scale(0);
+    animation: animate-hero .8s .75s forwards ease-in-out;
+    
+}
+#brand-name{
+    /* font-family: poppins; */
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: .1;
+}
+#brand-highlight{
+    height: 0.2rem;
+    width: 30rem;
+    background-color: #3F3D56;
+    border: none;
+    opacity: 22%;
+    line-height: 0.1;
+    margin: 0;
+}
+#subtitle{
+    /* font-family: poppins;     */
+    font-weight: 400;
+    font-weight: 00;
+    font-size: 1.5rem;
+    color: #3a3a3ae5;
+    letter-spacing: 1.5px;
+}
+
+.contact-info{
+    height: 12rem;
+    width: 17rem;
+    background: hsla(0, 0%, 77%, 0.35);
+    position: absolute;
+    left: 10rem;
+    top: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50px;
+    transform: scale(0);
+    animation: post-animation .5s 1.25s forwards ease-in;
+}
+.contact-info p#contact-text{
+    font-size: 1.5rem;
+    color: #005C54;
+    margin-top: 1em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+/* .contact-text-container{
+    height: 85px;
+} */
+.contact-icons{
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.contact-icons img{
+    height: 75px;
+    width: 75px;
+    /* margin-bottom: 2rem; */
+}
+/* .contact-info img:nth-child(1){
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+} */
+
+.contact-icons img:hover{
+transform: scale(1.2);
+transition: transform ease-out .25s;
+}
+
+ #technician #right-arm, #technician #right-hand{
+    animation: animate-hand 2.5s .2s ease infinite;
+}
+#technician #hair, #technician #face{
+    animation: animate-head 2.5s .3s ease infinite;
+}
+@keyframes animate-hero{
+    0%{
+        transform: scale(0.1);
+    }
+    60%{
+        transform: scale(0.85);
+    }
+    80%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(0.75);
+    }
+
+}
+@keyframes post-animation{
+    0%{
+        transform: scale(1.5);
+        opacity: 0.1;
+    }
+    60%{
+        transform: scale(0.7);
+        opacity: 0.3;
+
+    }
+    90%{
+        transform: scale(.8);
+        opacity: 0.8;
+
+    }
+    100%{
+        opacity: 1;
+        transform: scale(.75);
+    }
+
+}
+
+@keyframes animate-hand{
+    0%{
+        transform: rotateY(0deg)
+    }
+    50%{
+        transform: rotateY(10deg)
+    }
+    80%{
+        transform: rotateY(-7deg)
+    }
+    100%{
+        transform: rotateY(0)
+    }
+}
+
+@keyframes animate-head{
+    0%{
+        transform: rotateY(0deg)
+    }
+    50%{
+        transform: rotateY(5deg)
+    }
+    80%{
+        transform: rotateY(-2.5deg)
+    }
+    100%{
+        transform: rotateY(0)
+    }
+}

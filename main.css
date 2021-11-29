@@ -1,0 +1,302 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #D9DCB8;
+  font-family: Poppins, sans-serif;
+}
+body .container {
+  overflow: hidden;
+}
+body .container .header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vh;
+}
+body .container .header .header-left {
+  overflow: hidden;
+  max-height: 100vh;
+}
+body .container .header .header-left #bg-hero {
+  transform: scale(0.75);
+  position: absolute;
+  left: -40rem;
+  top: -45rem;
+  -webkit-animation: animate-hero 0.75s ease-in-out;
+          animation: animate-hero 0.75s ease-in-out;
+}
+body .container .header .header-left .title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 7rem;
+  top: 10rem;
+  height: 25vh;
+  transform: scale(0);
+  -webkit-animation: animate-hero 0.8s 0.75s forwards ease-in-out;
+          animation: animate-hero 0.8s 0.75s forwards ease-in-out;
+}
+body .container .header .header-left .title #brand-name {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+body .container .header .header-left .title #brand-highlight {
+  height: 0.2rem;
+  width: 35rem;
+  background-color: #000000;
+  border: none;
+  opacity: 22%;
+  margin-top: 1rem;
+}
+body .container .header .header-left .title #subtitle {
+  /* font-family: poppins;     */
+  width: 40vw;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #3F3D56;
+  letter-spacing: 1.5px;
+}
+body .container .header .header-left .contact-info {
+  height: 12rem;
+  width: 17rem;
+  background: #c4c4c459;
+  position: absolute;
+  left: 10rem;
+  top: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 50px;
+  transform: scale(0);
+  -webkit-animation: post-animation 0.5s 1.25s forwards ease-in;
+          animation: post-animation 0.5s 1.25s forwards ease-in;
+}
+body .container .header .header-left .contact-info #contact-text {
+  font-size: 1.5rem;
+  color: #005C54;
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+body .container .header .header-left .contact-info .contact-icons {
+  /* position: relative; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .container .header .header-left .contact-info .contact-icons img {
+  height: 75px;
+  width: 75px;
+  margin-top: 1.75rem;
+}
+body .container .header .header-left .contact-info .contact-icons img:hover {
+  transform: scale(1.2);
+  transition: transform ease-out 0.25s;
+}
+body .container .header .header-right #technician {
+  transform: scale(0.5);
+  position: absolute;
+  right: -10rem;
+  top: -10rem;
+}
+body .container .header .header-right #technician #right-arm, body .container .header .header-right #technician #right-hand {
+  -webkit-animation: animate-hand 2.5s 0.2s ease infinite;
+          animation: animate-hand 2.5s 0.2s ease infinite;
+}
+body .container .services-container {
+  height: 400px;
+}
+body .container .services-container .install {
+  height: 160px;
+  width: 50vw;
+  margin-left: 10vw;
+  background-color: #2A4D69;
+  margin-top: 20px;
+  border-radius: 150px 150px 150px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container .services-container .install img {
+  width: 100px;
+}
+body .container .services-container .install p {
+  margin-right: 25px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+body .container .services-container .repair {
+  position: absolute;
+  right: 0;
+  height: 160px;
+  width: 50vw;
+  margin-right: 10vw;
+  background-color: #009688;
+  margin-top: 20px;
+  border-radius: 150px 150px 150px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body .container .services-container .repair img {
+  width: 100px;
+  margin-right: 10px;
+}
+body .container .services-container .repair p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+body .container .tfs {
+  width: 90vw;
+  height: 200px;
+  background-color: #4B86B4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5vw;
+}
+body .container .tfs img {
+  width: 150px;
+}
+body .container .tfs p {
+  width: 250px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+body .container .certified {
+  display: flex;
+  justify-content: space-around;
+  height: 650px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body .container .certified .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+}
+body .container .certified .left img {
+  width: 100px;
+}
+body .container .certified .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+body .container .certified .right #jd {
+  transform: scale(0.4);
+  border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+  body .container .header {
+    height: 80vh;
+  }
+  body .container .header .header-left #bg-hero {
+    transform: scale(0.5);
+    left: -51.5rem;
+    top: -40rem;
+  }
+  body .container .header .header-left .title {
+    left: 1rem;
+    top: 1rem;
+    height: 50vh;
+  }
+  body .container .header .header-left .title #brand-name {
+    font-size: 5rem;
+  }
+  body .container .header .header-left .title #brand-highlight {
+    width: 90vw;
+  }
+  body .container .header .header-left .title #subtitle {
+    width: 90vw;
+    font-size: 1.2rem;
+  }
+  body .container .header .header-left .contact-info {
+    left: 1.5rem;
+    top: 22rem;
+  }
+  body .container .header .header-right #technician {
+    display: none;
+  }
+  body .container .services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .services-container .install, body .container .services-container .repair {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 95vw;
+    height: 100px;
+  }
+  body .container .services-container .install p, body .container .services-container .repair p {
+    font-size: 1rem;
+  }
+  body .container .services-container .install img, body .container .services-container .repair img {
+    width: 75px;
+    margin-left: 10px;
+  }
+  body .container .services-container .install img {
+    margin-right: 20px;
+  }
+  body .container .services-container .repair {
+    position: static;
+  }
+  body .container .tfs {
+    width: 100vw;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  body .container .tfs img {
+    width: 100px;
+  }
+  body .container .tfs p {
+    width: 100px;
+    font-size: 1rem;
+  }
+  body .container .certified {
+    overflow: hidden;
+    width: 100vw;
+    background-color: #b1ffdc98;
+    flex-direction: column;
+  }
+  body .container .certified .left {
+    height: 200px;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  body .container .certified .left p {
+    width: 50vw;
+  }
+  body .container .certified .right {
+    height: 400px;
+    width: 100vw;
+  }
+  body .container .certified .right #jd {
+    transform: scale(0.3);
+  }
+}/*# sourceMappingURL=main.css.map */

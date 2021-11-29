@@ -1,0 +1,337 @@
+$font-stack: Poppins, sans-serif;
+:root{
+    font-size: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #D9DCB8;
+    font-family: $font-stack;
+    // overflow: hidden;
+    .container{
+        overflow: hidden;
+        .header{
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100vh;
+            .header-left{
+                overflow: hidden;
+                max-height: 100vh;
+                // max-width: 50vw;
+                #bg-hero{
+                    transform: scale(.75);
+                    position: absolute;
+                    left: -40rem;
+                    top: -45rem;
+                    animation: animate-hero .75s ease-in-out;
+                }
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    left: 7rem;
+                    top: 10rem;
+                    height: 25vh;
+                    transform: scale(0);
+                    animation: animate-hero .8s .75s forwards ease-in-out;
+                    
+                    #brand-name{
+                        font-weight: 700;
+                        font-size: 5rem;
+                        line-height: 1;
+                        margin-bottom: 2rem;
+                    }
+                    #brand-highlight{
+                        height: 0.2rem;
+                        width: 35rem;
+                        background-color: #000000;
+                        border: none;
+                        opacity: 22%;
+                        margin-top: 1rem;
+                        // line-height: 0.1;
+                    }
+                    #subtitle{
+                        /* font-family: poppins;     */
+                        width: 40vw;
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                        color: #3F3D56;
+                        letter-spacing: 1.5px;
+                    }
+                }
+                
+                .contact-info{
+                    height: 12rem;
+                    width: 17rem;
+                    background: #c4c4c459;
+                    position: absolute;
+                    left: 10rem;
+                    top: 25rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 50px;
+                    transform: scale(0);
+                    animation: post-animation .5s 1.25s forwards ease-in;
+    
+                    #contact-text{
+                        font-size: 1.5rem;
+                        color: #005C54;
+                        margin-top: 1em;
+                        font-weight: 600;
+                        letter-spacing: 3px;
+                    }
+                    .contact-icons{
+                        /* position: relative; */
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+    
+                        img{
+                            height: 75px;
+                            width: 75px;
+                            margin-top: 1.75rem; 
+                            &:hover{
+                                transform: scale(1.2);
+                                transition: transform ease-out .25s;
+                                }
+                        }
+                    }
+                }
+                
+            }
+            .header-right{
+                #technician{
+                    transform: scale(.5);
+                    position: absolute;
+                    right: -10rem;
+                    top: -10rem;
+                    
+                    #right-arm, #right-hand{
+                        animation: animate-hand 2.5s .2s ease infinite;
+                    }
+                }
+            }
+    
+        }
+        .services-container{
+            height: 400px;
+            .install{
+                height: 160px;
+                width: 50vw;
+                margin-left: 10vw;
+                background-color: #2A4D69;
+                margin-top: 20px;
+                border-radius: 150px 150px 150px 150px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                img{
+                    width: 100px;
+                }
+                p{
+                    margin-right: 25px;
+                    font-size: 1.2rem;
+                    color: #fff;
+                }
+            }
+                
+            .repair{
+                position: absolute;
+                right: 0;
+                height: 160px;
+                width: 50vw;
+                margin-right: 10vw;
+                background-color: #009688;
+                margin-top: 20px;
+                border-radius: 150px 150px 150px 150px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 10px;
+                img{
+                    width: 100px;
+                    margin-right: 10px;
+                }
+                p{
+                    font-size: 1.2rem;
+                    color: #fff;
+                }
+                
+            }
+        }
+        .tfs{
+           width: 90vw;
+           height: 200px;
+           background-color: #4B86B4; 
+           border-radius: 5px;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           margin: 5vw;
+           img{
+               width: 150px;
+           }
+           p{
+               width: 250px;
+               color: #fff;
+               font-size: 1.2rem;
+           }
+        }
+        .certified{
+            display: flex;
+            justify-content: space-around;
+            height: 650px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            .left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 30vw;
+                img{
+                    width: 100px;
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30vw;
+                #jd{
+                    transform: scale(.4);
+                    border-radius: 20px;
+                }
+            }
+                
+        }
+    }
+}
+
+@media (max-width: 640px){
+    body{
+        .container{
+            .header{
+                height:80vh;
+                .header-left{
+                    #bg-hero{
+                        transform: scale(.5);
+                        left: -51.5rem;
+                        top: -40rem;
+                    }
+                    .title{
+                        left: 1rem;
+                        top: 1rem;
+                        height: 50vh;
+
+                        #brand-name{
+                            font-size: 5rem;                       
+                        }
+                        #brand-highlight{
+                            width: 90vw;
+                        }
+                        #subtitle{
+                            width: 90vw;
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .contact-info{
+                        left: 1.5rem;
+                        top: 22rem;
+                    }
+                }
+                .header-right{
+                    #technician{
+                        display: none;
+                    }
+                }
+            }
+            .services-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .install, .repair{
+                    margin-left: 0;
+                    margin-right: 0;
+                    text-align: center;
+                    width: 95vw;
+                    height: 100px;
+                    p{
+                    font-size: 1rem;
+                    }
+                    img{
+                        width: 75px;
+                        margin-left: 10px;
+                }
+
+            }
+            .install{
+                img{
+                margin-right: 20px;
+                }
+            }
+            .repair{
+                position: static;
+                
+            }
+        }
+        .tfs{
+            width: 100vw;
+            margin: 0;
+            margin-bottom: 10px;
+            img{
+                width: 100px
+            }
+            p{
+                width: 100px;
+                font-size: 1rem;
+            }
+        }
+        .certified{
+            // height: 65
+            overflow: hidden;
+            width: 100vw;
+            background-color: #b1ffdc98;
+            // display: block;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            .left{
+                height: 200px;
+                // display: block;
+                text-align: center;
+                // position: relative;
+                // left: 50%;
+                // transform: translatex(50%);
+                width: 100vw;
+                margin-bottom: 20px;
+                p{
+                    width: 50vw;
+                }
+
+            }
+
+            .right{
+                // display: block;
+                height: 400px;
+                width: 100vw;
+                #jd{
+                    transform: scale(.3);
+                }
+            }
+        }
+    }
+}
+}
