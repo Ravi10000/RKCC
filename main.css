@@ -109,10 +109,12 @@ body .container .header .header-left .contact-info .contact-icons img:hover {
   transition: transform ease-out 0.25s;
 }
 body .container .header .header-right #technician {
-  transform: scale(0.5);
+  transform: scale(0);
   position: absolute;
   right: -10rem;
   top: -10rem;
+  -webkit-animation: animate-technician 0.75s 2s ease-in-out forwards;
+          animation: animate-technician 0.75s 2s ease-in-out forwards;
 }
 body .container .header .header-right #technician #right-arm, body .container .header .header-right #technician #right-hand {
   -webkit-animation: animate-hand 2.5s 0.2s ease infinite;
