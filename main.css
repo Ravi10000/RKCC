@@ -167,14 +167,14 @@ body .container .services-container .repair p {
   color: #003631;
 }
 body .container .tfs {
-  width: 90vw;
+  width: 80vw;
   height: 200px;
   background-color: rgba(255, 117, 124, 0.5);
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5vw;
+  margin: 10vw;
 }
 body .container .tfs img {
   width: 150px;
