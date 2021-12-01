@@ -5,6 +5,19 @@
     80%{    transform: scale(0.7);   }
     100%{   transform: scale(0.75);  }
 }
+@keyframes animate-pop-up{
+    0%{     transform: scale(.5);   }
+    60%{    transform: scale(1.1);  }
+    80%{    transform: scale(0.95);   }
+    100%{   transform: scale(1);  }
+}
+
+@keyframes animate-click{
+    0%{     transform: scale(1);   }
+    60%{    transform: scale(.8);  }
+    80%{    transform: scale(0.95);   }
+    100%{   transform: scale(1.1);  }
+}
 
 @keyframes animate-technician{
     0%{     transform: scale(0.1);   }

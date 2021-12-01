@@ -1,0 +1,87 @@
+.services-container {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services-container .install, .services-container .repair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 35vw;
+  margin-left: 10vw;
+  background-color: #5ab8e0b0;
+  margin-top: 20px;
+  border-radius: 150px 150px 150px 150px;
+}
+.services-container .install img, .services-container .repair img {
+  width: 75px;
+}
+.services-container .install p, .services-container .repair p {
+  text-align: center;
+  width: 250px;
+  margin-right: 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #09263b;
+}
+.services-container .repair {
+  background-color: #00948580;
+}
+.services-container .repair p {
+  color: #003631;
+}
+
+.services-container {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services-container .install {
+  height: 120px;
+  width: 35vw;
+  margin-left: 10vw;
+  background-color: #5ab8e0b0;
+  margin-top: 20px;
+  border-radius: 150px 150px 150px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.services-container .install img {
+  width: 75px;
+}
+.services-container .install p {
+  text-align: center;
+  width: 250px;
+  margin-right: 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #09263b;
+}
+.services-container .repair {
+  height: 120px;
+  width: 35vw;
+  margin-right: 10vw;
+  background-color: #00948580;
+  margin-top: 20px;
+  border-radius: 150px 150px 150px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.services-container .repair img {
+  width: 75px;
+  margin-right: 10px;
+}
+.services-container .repair p {
+  text-align: center;
+  width: 250px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #003631;
+}/*# sourceMappingURL=text.css.map */
