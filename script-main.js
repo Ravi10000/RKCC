@@ -8,6 +8,7 @@
 const icons = document.querySelectorAll(".icon")
 const contactInfo = document.querySelector('.contact-info')
 const popUp = document.querySelector('.pop-up')
+const contactHeading = document.querySelector('.pop-up h3')
 // const linkContainer = document.querySelectorAll('.pop-up div')
 const link = document.querySelectorAll('.pop-up a');
 const contacts = document.querySelectorAll('.popUp div')
@@ -27,6 +28,7 @@ mouseLeave(icons)
 
 
 icons[0].addEventListener('click', e=>{
+        contactHeading.innerHTML = 'Call'
         contactInfoContainer.classList.add('move')
         e.target.classList.add('animate')
         icons[1].classList.remove('animate')
@@ -36,6 +38,7 @@ icons[0].addEventListener('click', e=>{
         link[1].setAttribute('href', 'tel:+919582541150')
 })
 icons[1].addEventListener('click', e=>{
+        contactHeading.innerHTML = 'Whats App'
         contactInfoContainer.classList.add('move')
         e.target.classList.add('animate')
         icons[0].classList.remove('animate')
