@@ -57,13 +57,9 @@ body .container .pop-up.show a .one, body .container .pop-up.show a .two {
   background-color: #2195f3;
   border-radius: 50px;
 }
-body .container .pop-up.show .one.animate {
-  -webkit-animation: animate-pop-up 0.5s ease-in-out;
-          animation: animate-pop-up 0.5s ease-in-out;
-}
-body .container .pop-up.show .two.animate {
-  -webkit-animation: animate-pop-up 0.5s ease-in-out;
-          animation: animate-pop-up 0.5s ease-in-out;
+body .container .pop-up.show a .one.click, body .container .pop-up.show a .one.click {
+  -webkit-animation: animate-click 0.2s ease-in-out;
+          animation: animate-click 0.2s ease-in-out;
 }
 body .container .pop-up.show.wa h3 {
   color: #205014;
@@ -77,6 +73,7 @@ body .container .header {
   flex-direction: row;
   height: 100vh;
   width: 100vh;
+  margin-bottom: 50px;
 }
 body .container .header .header-left {
   overflow: hidden;
@@ -194,7 +191,6 @@ body .container .reach-us {
   flex-direction: column;
   justify-content: space-evenly;
   height: 600px;
-  width: 100vw;
   align-items: center;
 }
 body .container .reach-us h2 {
@@ -299,7 +295,57 @@ body .container .certified .right #jd {
   border-radius: 20px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  body .container .pop-up.show {
+    top: 65%;
+    left: 20%;
+  }
+  body .container .header {
+    width: 100vw;
+    height: 100vh;
+  }
+  body .container .header .header-left #bg-hero {
+    top: -40rem;
+    -webkit-animation: animate-hero-tablet 0.75s ease-in-out forwards;
+            animation: animate-hero-tablet 0.75s ease-in-out forwards;
+  }
+  body .container .header .header-left .title #subtitle {
+    width: 70vw;
+  }
+  body .container .header .header-left .contact-info {
+    transition: top 0.2s ease-in-out;
+  }
+  body .container .header .header-left .contact-info.move {
+    top: 22rem;
+  }
+  body .container .header .header-right {
+    display: none;
+  }
+  body .container .reach-us .address-info #address {
+    width: 200px;
+  }
+  body .container .reach-us .address-info #map {
+    width: 400px;
+    height: 300px;
+  }
+  body .container .services-container .install, body .container .services-container .repair {
+    width: 45vw;
+  }
+  body .container .services-container .install img, body .container .services-container .repair img {
+    width: 50px;
+  }
+  body .container .tfs {
+    width: 100vw;
+    margin-left: 0;
+  }
+  body .container .certified .left, body .container .certified .right {
+    width: 45vw;
+  }
+  body .container .certified .right #jd {
+    transform: scale(0.25);
+  }
+}
+@media (max-width: 425px) {
   body .container .pop-up.show {
     top: 70%;
     left: 15%;
@@ -332,12 +378,12 @@ body .container .certified .right #jd {
   body .container .header .header-left .contact-info {
     left: 1.5rem;
     top: 22rem;
-    transition: top 0.2s ease-out;
+    transition: top 0.2s ease-in-out;
   }
   body .container .header .header-left .contact-info.move {
     top: 20rem;
   }
-  body .container .header .header-right #technician {
+  body .container .header .header-right {
     display: none;
   }
   body .container .reach-us {

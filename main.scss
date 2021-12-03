@@ -9,6 +9,7 @@ $font-stack: Poppins, sans-serif;
     box-sizing: border-box;
 }
 body{
+    // overflow: hidden;
     background: #d9dcb88a;
     font-family: $font-stack;
     .container{
@@ -39,7 +40,6 @@ body{
                     font-size: 1.2rem;
                 }
                 a{
-                    // font-weight: 500;
                     text-decoration: none;
                     color:#000;
                     .one, .two{
@@ -53,14 +53,18 @@ body{
                         border-radius: 50px;
                         
                     }
+                    .one.click, .one.click{
+                        animation: animate-click .2s ease-in-out;    
+
+                    }
                 }
                 
-                .one.animate{
-                    animation: animate-pop-up .5s ease-in-out;
-                }
-                .two.animate{
-                    animation: animate-pop-up .5s ease-in-out;
-                }
+                // .one.animate{
+                //     animation: animate-pop-up .5s ease-in-out;
+                // }
+                // .two.animate{
+                //     animation: animate-pop-up .5s ease-in-out;
+                // }
             }
             .pop-up.show.wa{
                 h3{
@@ -76,6 +80,7 @@ body{
             flex-direction: row;
             height: 100vh;
             width: 100vh;
+            margin-bottom: 50px;
             .header-left{
                 overflow: hidden;
                 max-height: 100vh;
@@ -200,7 +205,7 @@ body{
             flex-direction: column;
             justify-content: space-evenly;
             height: 600px;
-            width: 100vw;
+            // width: 100vw;
             align-items: center;
             h2{
                 color: #68241e;
@@ -311,7 +316,82 @@ body{
     }
 }
 
-@media (max-width: 640px){
+
+
+@media (max-width: 768px){
+    body{
+        .container{
+            .pop-up.show{
+                top: 65%;
+                left: 20%;
+            }
+            .header{
+                width: 100vw;
+                height: 100vh;
+                .header-left{
+                    #bg-hero{
+                    top: -40rem;
+                    animation: animate-hero-tablet .75s ease-in-out forwards;
+                    }
+                    .title{
+                        #subtitle{
+                            width: 70vw;
+                        }
+                    }
+                    .contact-info{
+                        transition: top .2s ease-in-out;
+                    }
+                    .contact-info.move{
+                        top: 22rem;
+                        // transition: top .2s ease-in;
+                    }
+                }
+                .header-right{
+                    display: none;
+                }
+            }
+            // #seperator{
+            //     // width: 100vw;
+            //     display: none;
+            // }
+            .reach-us{
+                .address-info{
+                    #address{
+                        width: 200px;
+                    }
+                    #map{
+                        width: 400px;
+                        height: 300px;
+                    }
+                }
+            }
+            .services-container{
+                .install, .repair{
+                    width: 45vw;
+
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+            .tfs{
+                width: 100vw;
+                margin-left: 0;
+            }
+            .certified{
+                .left, .right{
+                width: 45vw;
+                }
+                .right{
+                    #jd{
+                        transform: scale(.25);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px){
     body{
         .container{
             .pop-up.show{
@@ -347,18 +427,17 @@ body{
                     .contact-info{
                         left: 1.5rem;
                         top: 22rem;
-                        transition: top .2s ease-out;
+                        transition: top .2s ease-in-out;
 
                     }
                     .contact-info.move{
                         top: 20rem;
-                        // transition: top .2s ease-in;
                     }
                 }
                 .header-right{
-                    #technician{
-                        display: none;
-                    }
+                    display: none;
+                    // #technician{
+                    // }
                 }
             }
             .reach-us{
@@ -446,15 +525,3 @@ body{
     }
 }
 }
-
-// @media (max-width: 2000px){
-//     .container{
-//         .header{
-//             .header-left{
-//                 #bg-hero{
-//                     transform: scale(1);
-//                 }
-//             }
-//         }
-//     }
-// }
