@@ -38,7 +38,7 @@ body .container .pop-up.show {
           animation: animate-pop-up 0.5s ease-in-out;
 }
 body .container .pop-up.show h3 {
-  color: #10283b;
+  color: #173c5a;
   letter-spacing: 2px;
   font-weight: 600;
   font-size: 1.2rem;
@@ -73,26 +73,26 @@ body .container .header {
   flex-direction: row;
   height: 100vh;
   width: 100vh;
-  margin-bottom: 50px;
+  margin: 0;
 }
 body .container .header .header-left {
   overflow: hidden;
   max-height: 100vh;
 }
-body .container .header .header-left #bg-hero {
+body .container .header .header-left #bg-blob {
   transform: scale(0);
   position: absolute;
   left: -40rem;
   top: -45rem;
-  -webkit-animation: animate-hero 0.75s ease-in-out forwards;
-          animation: animate-hero 0.75s ease-in-out forwards;
+  -webkit-animation: animate-blob 0.75s ease-in-out forwards;
+          animation: animate-blob 0.75s ease-in-out forwards;
 }
 body .container .header .header-left .title {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 7rem;
-  top: 10rem;
+  left: 5rem;
+  top: 8rem;
   height: 25vh;
   transform: scale(0);
   -webkit-animation: post-animation 0.5s 0.75s forwards ease-in;
@@ -116,15 +116,16 @@ body .container .header .header-left .title #brand-highlight {
 }
 body .container .header .header-left .title #subtitle {
   /* font-family: poppins;     */
-  width: 40vw;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #00403A;
+  width: 50vw;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #020303;
   letter-spacing: 1.5px;
 }
 body .container .header .header-left .contact-info {
-  height: 12rem;
-  width: 17rem;
+  transition: left 0.2s ease-in-out;
+  height: 14rem;
+  width: 18rem;
   background: #c4c4c459;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -154,23 +155,30 @@ body .container .header .header-left .contact-info .contact-icons {
   flex-direction: row;
   justify-content: space-evenly;
 }
-body .container .header .header-left .contact-info .contact-icons img {
+body .container .header .header-left .contact-info .contact-icons div {
+  text-align: center;
+  font-weight: 500;
+}
+body .container .header .header-left .contact-info .contact-icons div img {
   height: 75px;
   width: 75px;
   margin-top: 1.75rem;
 }
-body .container .header .header-left .contact-info .contact-icons img:hover {
+body .container .header .header-left .contact-info .contact-icons div img:hover {
   transform: scale(1.1);
   transition: transform ease-out 0.25s;
 }
-body .container .header .header-left .contact-info .contact-icons img.animate, body .container .header .header-left .contact-info .contact-icons a.img.animate {
+body .container .header .header-left .contact-info .contact-icons div img.animate, body .container .header .header-left .contact-info .contact-icons div a.img.animate {
   -webkit-animation: animate-click 0.2s ease-in-out;
           animation: animate-click 0.2s ease-in-out;
+}
+body .container .header .header-left .contact-info.move {
+  left: 5rem;
 }
 body .container .header .header-right #technician {
   transform: scale(0);
   position: absolute;
-  right: -10rem;
+  right: -15rem;
   top: -10rem;
   -webkit-animation: animate-technician 0.75s 2s ease-in-out forwards;
           animation: animate-technician 0.75s 2s ease-in-out forwards;
@@ -179,12 +187,19 @@ body .container .header .header-right #technician #right-arm, body .container .h
   -webkit-animation: animate-hand 2.5s 0.2s ease infinite;
           animation: animate-hand 2.5s 0.2s ease infinite;
 }
+body .container .header .header-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translatex(-50%);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
 body .container #seperator {
   height: 0.2rem;
   background-color: #000000;
   border: none;
   opacity: 22%;
-  margin-top: 1rem;
 }
 body .container .reach-us {
   display: flex;
@@ -211,7 +226,6 @@ body .container .reach-us .address-info #map {
   height: 400px;
 }
 body .container .services-container {
-  height: 150px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -221,8 +235,8 @@ body .container .services-container .install, body .container .services-containe
   justify-content: space-around;
   align-items: center;
   height: 120px;
-  width: 35vw;
-  background-color: #5ab8e0b0;
+  width: 40vw;
+  background-color: #57d69d98;
   border-radius: 150px;
 }
 body .container .services-container .install img, body .container .services-container .repair img {
@@ -234,18 +248,18 @@ body .container .services-container .install p, body .container .services-contai
   margin-right: 25px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #09263b;
+  color: #072c29;
 }
 body .container .services-container .repair {
-  background-color: #57d69d98;
+  background-color: #ff757c80;
 }
 body .container .services-container .repair p {
-  color: #003631;
+  color: #4F130E;
 }
 body .container .tfs {
   width: 80vw;
   height: 200px;
-  background-color: rgba(255, 117, 124, 0.5);
+  background-color: #5ab8e0b0;
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
@@ -258,7 +272,7 @@ body .container .tfs img {
 }
 body .container .tfs p {
   width: 250px;
-  color: #4F130E;
+  color: #09263b;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -294,6 +308,34 @@ body .container .certified .right #jd {
   transform: scale(0.3);
   border-radius: 20px;
 }
+body .container .gallery-container {
+  display: grid;
+  justify-content: center;
+}
+body .container .gallery-container .gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  justify-content: center;
+  align-content: center;
+}
+body .container .gallery-container .gallery .gallery-text {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  text-align: center;
+}
+body .container .gallery-container .gallery .gallery-text p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #68241e;
+}
+body .container .gallery-container .gallery img {
+  width: 350px;
+  border-radius: 5px;
+}
 
 @media (max-width: 768px) {
   body .container .pop-up.show {
@@ -304,10 +346,10 @@ body .container .certified .right #jd {
     width: 100vw;
     height: 100vh;
   }
-  body .container .header .header-left #bg-hero {
+  body .container .header .header-left #bg-blob {
     top: -40rem;
-    -webkit-animation: animate-hero-tablet 0.75s ease-in-out forwards;
-            animation: animate-hero-tablet 0.75s ease-in-out forwards;
+    -webkit-animation: animate-blob-tablet 0.75s ease-in-out forwards;
+            animation: animate-blob-tablet 0.75s ease-in-out forwards;
   }
   body .container .header .header-left .title #subtitle {
     width: 70vw;
@@ -317,9 +359,13 @@ body .container .certified .right #jd {
   }
   body .container .header .header-left .contact-info.move {
     top: 22rem;
+    left: 10rem;
   }
   body .container .header .header-right {
     display: none;
+  }
+  body .container .header .header-bottom {
+    width: 65vw;
   }
   body .container .reach-us .address-info #address {
     width: 200px;
@@ -328,21 +374,43 @@ body .container .certified .right #jd {
     width: 400px;
     height: 300px;
   }
+  body .container .services-container {
+    margin-bottom: 100px;
+  }
   body .container .services-container .install, body .container .services-container .repair {
     width: 45vw;
+    flex-direction: column;
+    height: 35vw;
+    width: 35vw;
+    justify-content: space-evenly;
   }
   body .container .services-container .install img, body .container .services-container .repair img {
-    width: 50px;
+    width: 75px;
+  }
+  body .container .services-container .install p, body .container .services-container .repair p {
+    margin: 0;
   }
   body .container .tfs {
     width: 100vw;
     margin-left: 0;
+  }
+  body .container .certified {
+    height: 500px;
   }
   body .container .certified .left, body .container .certified .right {
     width: 45vw;
   }
   body .container .certified .right #jd {
     transform: scale(0.25);
+  }
+  body .container .gallery-container .gallery .gallery-text {
+    width: 300px;
+  }
+  body .container .gallery-container .gallery .gallery-text p {
+    font-size: 2.5rem;
+  }
+  body .container .gallery-container .gallery img {
+    width: 300px;
   }
 }
 @media (max-width: 425px) {
@@ -353,12 +421,12 @@ body .container .certified .right #jd {
   body .container .header {
     height: 90vh;
   }
-  body .container .header .header-left #bg-hero {
+  body .container .header .header-left #bg-blob {
     transform: scale(0);
     left: -51.5rem;
     top: -40rem;
-    -webkit-animation: animate-hero-mobile 0.5s ease-out forwards;
-            animation: animate-hero-mobile 0.5s ease-out forwards;
+    -webkit-animation: animate-blob-mobile 0.5s ease-out forwards;
+            animation: animate-blob-mobile 0.5s ease-out forwards;
   }
   body .container .header .header-left .title {
     left: 1rem;
@@ -381,13 +449,18 @@ body .container .certified .right #jd {
     transition: top 0.2s ease-in-out;
   }
   body .container .header .header-left .contact-info.move {
+    left: 1.5rem;
     top: 20rem;
   }
   body .container .header .header-right {
     display: none;
   }
+  body .container .header .header-bottom {
+    bottom: 1%;
+  }
   body .container .reach-us {
     margin-top: 25px;
+    height: 70vh;
     align-items: center;
   }
   body .container .reach-us .address-info {
@@ -413,8 +486,9 @@ body .container .certified .right #jd {
     align-items: center;
   }
   body .container .services-container .install, body .container .services-container .repair {
+    flex-direction: row;
     width: 95vw;
-    height: 100px;
+    margin-bottom: 25px;
   }
   body .container .services-container .install p, body .container .services-container .repair p {
     font-size: 1rem;
@@ -460,5 +534,8 @@ body .container .certified .right #jd {
   }
   body .container .certified .right #jd {
     transform: scale(0.3);
+  }
+  body .container .gallery-container .gallery {
+    grid-template-columns: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

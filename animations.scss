@@ -1,18 +1,18 @@
 
-@keyframes animate-hero{
+@keyframes animate-blob{
     0%{     transform: scale(0.1);   }
-    60%{    transform: scale(0.85);  }
-    80%{    transform: scale(0.7);   }
-    100%{   transform: scale(0.75);  }
+    60%{    transform: scale(0.7);  }
+    80%{    transform: scale(0.55);   }
+    100%{   transform: scale(0.6);  }
 }
-@keyframes animate-hero-tablet{
+@keyframes animate-blob-tablet{
     0%{     transform: scale(0);   }
     60%{    transform: scale(0.7);  }
     80%{    transform: scale(0.55);   }
     100%{   transform: scale(0.6);  }
 }
 
-@keyframes animate-hero-mobile{
+@keyframes animate-blob-mobile{
     0%{     transform: scale(0.1);   }
     60%{    transform: scale(0.55);  }
     80%{    transform: scale(0.45);   }
@@ -34,9 +34,9 @@
 
 @keyframes animate-technician{
     0%{     transform: scale(0.1);   }
-    60%{    transform: scale(0.55);  }
-    80%{    transform: scale(0.45);   }
-    100%{   transform: scale(0.5);  }
+    60%{    transform: scale(0.45);  }
+    80%{    transform: scale(0.35);   }
+    100%{   transform: scale(0.4);  }
 }
 
 @keyframes animate-hand{
