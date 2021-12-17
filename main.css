@@ -9,8 +9,9 @@
 }
 
 body {
+  line-height: 1.6;
   background: #d9dcb88a;
-  font-family: Poppins, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 body .container {
   overflow: hidden;
@@ -99,6 +100,8 @@ body .container .header .header-left .title {
           animation: post-animation 0.5s 0.75s forwards ease-in;
 }
 body .container .header .header-left .title #brand-name {
+  font-family: "Righteous", cursive;
+  letter-spacing: 5px;
   font-weight: 700;
   font-size: 5rem;
   line-height: 1;
@@ -116,10 +119,10 @@ body .container .header .header-left .title #brand-highlight {
 }
 body .container .header .header-left .title #subtitle {
   /* font-family: poppins;     */
-  width: 50vw;
-  font-weight: 300;
+  width: 40vw;
+  font-weight: 400;
   font-size: 1.3rem;
-  color: #020303;
+  color: #2a3030;
   letter-spacing: 1.5px;
 }
 body .container .header .header-left .contact-info {
@@ -194,7 +197,7 @@ body .container .header .header-bottom {
   transform: translatex(-50%);
   font-weight: 500;
   font-size: 1.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 0.75;
 }
 body .container #seperator {
@@ -333,7 +336,7 @@ body .container .gallery-container .gallery .gallery-text {
 }
 body .container .gallery-container .gallery .gallery-text p {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #68241e;
 }
 body .container .gallery-container .gallery img {
@@ -406,6 +409,7 @@ body .container .gallery-container .gallery img {
   }
   body .container .gallery-container .gallery .gallery-text {
     width: 300px;
+    height: 225px;
   }
   body .container .gallery-container .gallery .gallery-text p {
     font-size: 2.5rem;
