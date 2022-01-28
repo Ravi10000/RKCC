@@ -1,4 +1,4 @@
-$font-stack: 'Josefin Sans', sans-serif;
+$font-stack: 'Poppins', sans-serif;
 :root{
     font-size: 16px;
 }
@@ -104,8 +104,13 @@ body{
                     transform: scale(0);
                     animation: post-animation .5s .75s forwards ease-in;
                     
+                    // span{
+                    //     width: 400px;
+                    //     border-radius: 15px;
+                    //     background-color: rgba(255, 255, 255, 0.24);
+                    // }
                     #brand-name{
-                        font-family: 'Righteous', cursive;
+                        font-family: $font-stack;
                         letter-spacing: 5px;
                         font-weight: 700;
                         font-size: 5rem;
@@ -255,7 +260,7 @@ body{
                 height: 120px;
                 width: 400px;
                 background-color: #57d69d98;
-                border-radius: 150px;
+                border-radius: 15px;
                 
                 img{
                     width: 75px;
@@ -325,6 +330,7 @@ body{
                 width: 150px;
             }
             p{
+                text-align: center;
                 width: 250px;
                 color: #09263b;
                 font-size: 1.2rem;
@@ -470,8 +476,8 @@ body{
     body{
         .container{
             .pop-up.show{
-                top: 70%;
-                left: 15%;
+                top: 69%;
+                left: 10%;
             }
             .header{
                 height:90vh;
@@ -507,7 +513,7 @@ body{
                     }
                     .contact-info.move{
                         left: 1.5rem;
-                        top: 20rem;
+                        top: 17rem;
                     }
                 }
                 .header-right{
@@ -517,7 +523,7 @@ body{
                 }
                 .header-bottom{
                     text-align: center;
-                    bottom: 1%;
+                    bottom: 0.5%;
                     width: 90vw;
                     opacity: .6;
                 }
@@ -581,7 +587,7 @@ body{
                 width: 100vw;
                 margin-bottom: 20px;
                 p{
-                    width: 50vw;
+                    width: 75vw;
                     font-size: 1rem;
                     color: #00403A;
                 }

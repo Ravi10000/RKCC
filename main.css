@@ -11,7 +11,7 @@
 body {
   line-height: 1.6;
   background: #d9dcb88a;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body .container {
   overflow: hidden;
@@ -100,7 +100,7 @@ body .container .header .header-left .title {
           animation: post-animation 0.5s 0.75s forwards ease-in;
 }
 body .container .header .header-left .title #brand-name {
-  font-family: "Righteous", cursive;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 5px;
   font-weight: 700;
   font-size: 5rem;
@@ -242,7 +242,7 @@ body .container .services-container .install, body .container .services-containe
   height: 120px;
   width: 400px;
   background-color: #57d69d98;
-  border-radius: 150px;
+  border-radius: 15px;
 }
 body .container .services-container .install img, body .container .services-container .repair img {
   width: 75px;
@@ -308,6 +308,7 @@ body .container .tfs img {
   width: 150px;
 }
 body .container .tfs p {
+  text-align: center;
   width: 250px;
   color: #09263b;
   font-size: 1.2rem;
@@ -420,8 +421,8 @@ body .container .gallery-container .gallery img {
 }
 @media (max-width: 425px) {
   body .container .pop-up.show {
-    top: 70%;
-    left: 15%;
+    top: 69%;
+    left: 10%;
   }
   body .container .header {
     height: 90vh;
@@ -455,14 +456,14 @@ body .container .gallery-container .gallery img {
   }
   body .container .header .header-left .contact-info.move {
     left: 1.5rem;
-    top: 20rem;
+    top: 17rem;
   }
   body .container .header .header-right {
     display: none;
   }
   body .container .header .header-bottom {
     text-align: center;
-    bottom: 1%;
+    bottom: 0.5%;
     width: 90vw;
     opacity: 0.6;
   }
@@ -521,7 +522,7 @@ body .container .gallery-container .gallery img {
     margin-bottom: 20px;
   }
   body .container .certified .left p {
-    width: 50vw;
+    width: 75vw;
     font-size: 1rem;
     color: #00403A;
   }
