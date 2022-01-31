@@ -350,7 +350,7 @@ body .container footer {
   width: 100vw;
   background-color: #275d8a;
 }
-body .container .owner-info p {
+body .container footer .owner-info p {
   padding-top: 25px;
   margin-left: 25%;
   font-size: 1.2rem;
@@ -358,7 +358,7 @@ body .container .owner-info p {
   text-align: center;
   color: #fff;
 }
-body .container .owner-info p span {
+body .container footer .owner-info p span {
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -384,7 +384,7 @@ body .container .owner-info p span {
     transition: top 0.2s ease-in-out;
   }
   body .container .header .header-left .contact-info.move {
-    top: 22rem;
+    top: 21rem;
     left: 10rem;
   }
   body .container .header .header-right {

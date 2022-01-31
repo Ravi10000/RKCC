@@ -372,21 +372,22 @@ body{
             height: 200px;
             width: 100vw;
             background-color: #275d8a;
-        }
-        .owner-info{
-            p{
-                padding-top: 25px;
-                margin-left: 25%;
-                font-size: 1.2rem;
-                width: 50vw;
-                text-align: center;
-                color: #fff;
-                span{
-                    font-weight: 700;
-                    letter-spacing: 2px;
+            .owner-info{
+                p{
+                    padding-top: 25px;
+                    margin-left: 25%;
+                    font-size: 1.2rem;
+                    width: 50vw;
+                    text-align: center;
+                    color: #fff;
+                    span{
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                    }
                 }
             }
         }
+        
     }
     
 }
@@ -415,7 +416,7 @@ body{
                         transition: top .2s ease-in-out;
                     }
                     .contact-info.move{
-                        top: 22rem;
+                        top: 21rem;
                         left: 10rem;
                         // transition: top .2s ease-in;
                     }
