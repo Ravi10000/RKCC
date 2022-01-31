@@ -56,7 +56,7 @@ body .container .pop-up.show a .one, body .container .pop-up.show a .two {
   height: 50px;
   width: 200px;
   background-color: #2195f3;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 body .container .pop-up.show a .one.click, body .container .pop-up.show a .one.click {
   -webkit-animation: animate-click 0.2s ease-in-out;
@@ -139,7 +139,7 @@ body .container .header .header-left .contact-info {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 40px;
   transform: scale(0);
   -webkit-animation: post-animation 0.5s 1.25s forwards ease-in;
           animation: post-animation 0.5s 1.25s forwards ease-in;
@@ -343,6 +343,24 @@ body .container .gallery-container .gallery .gallery-text p {
 body .container .gallery-container .gallery img {
   width: 350px;
   border-radius: 10px;
+}
+body .container footer {
+  margin-top: 25px;
+  height: 200px;
+  width: 100vw;
+  background-color: #275d8a;
+}
+body .container .owner-info p {
+  padding-top: 25px;
+  margin-left: 25%;
+  font-size: 1.2rem;
+  width: 50vw;
+  text-align: center;
+  color: #fff;
+}
+body .container .owner-info p span {
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 768px) {

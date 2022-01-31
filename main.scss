@@ -51,7 +51,7 @@ body{
                         height: 50px;
                         width: 200px;
                         background-color: rgb(33, 149, 243);
-                        border-radius: 50px;
+                        border-radius: 40px;
                         
                     }
                     .one.click, .one.click{
@@ -151,7 +151,7 @@ body{
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: center;
-                    border-radius: 50px;
+                    border-radius: 40px;
                     transform: scale(0);
                     animation: post-animation .5s 1.25s forwards ease-in;
     
@@ -367,7 +367,28 @@ body{
                 }
             }
         }
+        footer{
+            margin-top: 25px;
+            height: 200px;
+            width: 100vw;
+            background-color: #275d8a;
+        }
+        .owner-info{
+            p{
+                padding-top: 25px;
+                margin-left: 25%;
+                font-size: 1.2rem;
+                width: 50vw;
+                text-align: center;
+                color: #fff;
+                span{
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+            }
+        }
     }
+    
 }
 
 @media (max-width: 768px){
