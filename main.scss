@@ -13,6 +13,7 @@ body{
     // overflow: hidden;
     background: #d9dcb88a;
     font-family: $font-stack;
+    text-align: center;
     .container{
         overflow: hidden;
         .pop-up{
@@ -204,17 +205,18 @@ body{
                     }
                 }
             }
-            .header-bottom{
-                position: absolute;
-                left: 50%;
-                bottom: 5%;
-                transform: translatex(-50%);
-                font-weight: 500;
-                font-size: 1.5rem;
-                letter-spacing: 1px;
-                opacity: .75;
-            }
-    
+            
+            
+        }
+        .header-bottom{
+            // position: absolute;
+            // left: 50%;
+            // bottom: 5%;
+            // transform: translatex(-50%);
+            font-weight: 500;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            opacity: .75;
         }
         #seperator{
             height: 0.2rem;
@@ -543,12 +545,13 @@ body{
                     // #technician{
                     // }
                 }
-                .header-bottom{
-                    text-align: center;
-                    bottom: 0.5%;
-                    width: 90vw;
-                    opacity: .6;
-                }
+                
+            }
+            .header-bottom{
+                width: 90%;
+                // bottom: 0.5%;
+                // width: 90vw;
+                opacity: .6;
             }
             .reach-us{
                 margin-top: 25px;

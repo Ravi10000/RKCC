@@ -11,7 +11,7 @@
   height: 120px;
   width: 35vw;
   margin-left: 10vw;
-  background-color: #5ab8e0b0;
+  background-color: rgba(90, 184, 224, 0.6901960784);
   margin-top: 20px;
   border-radius: 150px 150px 150px 150px;
 }
@@ -27,7 +27,7 @@
   color: #09263b;
 }
 .services-container .repair {
-  background-color: #00948580;
+  background-color: rgba(0, 148, 133, 0.5019607843);
 }
 .services-container .repair p {
   color: #003631;
@@ -42,7 +42,7 @@
   height: 120px;
   width: 35vw;
   margin-left: 10vw;
-  background-color: #5ab8e0b0;
+  background-color: rgba(90, 184, 224, 0.6901960784);
   margin-top: 20px;
   border-radius: 150px 150px 150px 150px;
   display: flex;
@@ -65,7 +65,7 @@
   height: 120px;
   width: 35vw;
   margin-right: 10vw;
-  background-color: #00948580;
+  background-color: rgba(0, 148, 133, 0.5019607843);
   margin-top: 20px;
   border-radius: 150px 150px 150px 150px;
   display: flex;

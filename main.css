@@ -10,8 +10,9 @@
 
 body {
   line-height: 1.6;
-  background: #d9dcb88a;
+  background: rgba(217, 220, 184, 0.5411764706);
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 body .container {
   overflow: hidden;
@@ -55,7 +56,7 @@ body .container .pop-up.show a .one, body .container .pop-up.show a .two {
   align-items: center;
   height: 50px;
   width: 200px;
-  background-color: #2195f3;
+  background-color: rgb(33, 149, 243);
   border-radius: 40px;
 }
 body .container .pop-up.show a .one.click, body .container .pop-up.show a .one.click {
@@ -66,7 +67,7 @@ body .container .pop-up.show.wa h3 {
   color: #205014;
 }
 body .container .pop-up.show.wa .one, body .container .pop-up.show.wa .two {
-  background-color: #61c756;
+  background-color: rgb(97, 199, 86);
 }
 body .container .header {
   overflow: hidden;
@@ -122,14 +123,14 @@ body .container .header .header-left .title #subtitle {
   width: 40vw;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #2a3030;
+  color: rgb(42, 48, 48);
   letter-spacing: 1.5px;
 }
 body .container .header .header-left .contact-info {
   transition: left 0.2s ease-in-out;
   height: 14rem;
   width: 18rem;
-  background: #c4c4c459;
+  background: rgba(196, 196, 196, 0.3490196078);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: absolute;
@@ -190,11 +191,7 @@ body .container .header .header-right #technician #right-arm, body .container .h
   -webkit-animation: animate-hand 2.5s 0.2s ease infinite;
           animation: animate-hand 2.5s 0.2s ease infinite;
 }
-body .container .header .header-bottom {
-  position: absolute;
-  left: 50%;
-  bottom: 5%;
-  transform: translatex(-50%);
+body .container .header-bottom {
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -241,7 +238,7 @@ body .container .services-container .install, body .container .services-containe
   align-items: center;
   height: 120px;
   width: 400px;
-  background-color: #57d69d98;
+  background-color: rgba(87, 214, 157, 0.5960784314);
   border-radius: 15px;
 }
 body .container .services-container .install img, body .container .services-container .repair img {
@@ -256,7 +253,7 @@ body .container .services-container .install p, body .container .services-contai
   color: #072c29;
 }
 body .container .services-container .repair {
-  background-color: #ff757c80;
+  background-color: rgba(255, 117, 124, 0.5019607843);
 }
 body .container .services-container .repair p {
   color: #4F130E;
@@ -296,7 +293,7 @@ body .container .certified .right #jd {
 body .container .tfs {
   width: 80vw;
   height: 200px;
-  background-color: #5ab8e0b0;
+  background-color: rgba(90, 184, 224, 0.6901960784);
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
@@ -332,7 +329,7 @@ body .container .gallery-container .gallery .gallery-text {
   align-items: center;
   width: 350px;
   text-align: center;
-  background-color: #e2e183;
+  background-color: rgb(226, 225, 131);
   border-radius: 10px;
 }
 body .container .gallery-container .gallery .gallery-text p {
@@ -479,10 +476,8 @@ body .container footer .owner-info p span {
   body .container .header .header-right {
     display: none;
   }
-  body .container .header .header-bottom {
-    text-align: center;
-    bottom: 0.5%;
-    width: 90vw;
+  body .container .header-bottom {
+    width: 90%;
     opacity: 0.6;
   }
   body .container .reach-us {
@@ -528,7 +523,7 @@ body .container footer .owner-info p span {
     overflow: hidden;
     padding-bottom: 50px;
     width: 100vw;
-    background-color: #b1ffdc98;
+    background-color: rgba(177, 255, 220, 0.5960784314);
     flex-direction: column;
     height: 800px;
     border-radius: 10px;

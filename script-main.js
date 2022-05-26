@@ -39,6 +39,8 @@ icons[0].addEventListener('click', e=>{
         popUp.classList.remove('wa')
         link[0].setAttribute('href', 'tel:+917678627063')
         link[1].setAttribute('href', 'tel:+919582541150')
+        contactInfoContainer.style.borderRadius = '40px 40px 0px 40px'
+        popUp.style.borderRadius = '0px 40px 40px 40px'
 })
 icons[1].addEventListener('click', e=>{
         contactHeading.innerHTML = 'Whats App'
@@ -48,6 +50,8 @@ icons[1].addEventListener('click', e=>{
         popUp.classList.add('show', 'wa')
         link[0].setAttribute('href', 'https://wa.me/+917678627063')
         link[1].setAttribute('href', 'https://wa.me/+919582541150')
+        contactInfoContainer.style.borderRadius = '40px 40px 0px 40px'
+        popUp.style.borderRadius = '0px 40px 40px 40px'
 })
 
 
@@ -64,6 +68,7 @@ document.addEventListener('click', function(event) {
         popUp.classList.remove('show')
         icons[0].classList.remove('animate')
         icons[1].classList.remove('animate')
+        contactInfoContainer.style.borderRadius = '40px'
     }
 });
 
