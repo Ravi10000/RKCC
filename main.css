@@ -162,6 +162,7 @@ body .container .header .header-left .contact-info .contact-icons {
 body .container .header .header-left .contact-info .contact-icons div {
   text-align: center;
   font-weight: 500;
+  cursor: pointer;
 }
 body .container .header .header-left .contact-info .contact-icons div img {
   height: 75px;
@@ -190,12 +191,6 @@ body .container .header .header-right #technician {
 body .container .header .header-right #technician #right-arm, body .container .header .header-right #technician #right-hand {
   -webkit-animation: animate-hand 2.5s 0.2s ease infinite;
           animation: animate-hand 2.5s 0.2s ease infinite;
-}
-body .container .header-bottom {
-  font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  opacity: 0.75;
 }
 body .container #seperator {
   height: 0.2rem;
@@ -387,9 +382,6 @@ body .container footer .owner-info p span {
   body .container .header .header-right {
     display: none;
   }
-  body .container .header .header-bottom {
-    width: 75vw;
-  }
   body .container .reach-us .address-info #address {
     width: 200px;
   }
@@ -475,10 +467,6 @@ body .container footer .owner-info p span {
   }
   body .container .header .header-right {
     display: none;
-  }
-  body .container .header-bottom {
-    width: 90%;
-    opacity: 0.6;
   }
   body .container .reach-us {
     margin-top: 25px;

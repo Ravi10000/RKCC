@@ -173,6 +173,7 @@ body{
                         div{
                             text-align: center;
                             font-weight: 500;
+                            cursor: pointer;
                             img{
                                 height: 75px;
                                 width: 75px;
@@ -207,16 +208,6 @@ body{
             }
             
             
-        }
-        .header-bottom{
-            // position: absolute;
-            // left: 50%;
-            // bottom: 5%;
-            // transform: translatex(-50%);
-            font-weight: 500;
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-            opacity: .75;
         }
         #seperator{
             height: 0.2rem;
@@ -426,9 +417,6 @@ body{
                 .header-right{
                     display: none;
                 }
-                .header-bottom{
-                    width: 75vw;
-                }
             }
             // #seperator{
             //     // width: 100vw;
@@ -546,12 +534,6 @@ body{
                     // }
                 }
                 
-            }
-            .header-bottom{
-                width: 90%;
-                // bottom: 0.5%;
-                // width: 90vw;
-                opacity: .6;
             }
             .reach-us{
                 margin-top: 25px;
